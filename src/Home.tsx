@@ -1,24 +1,25 @@
-import './Home.css'
 import Arrow from './assets/Arrow.png';
 import Edit from './assets/Edit.png';
 import Delete from './assets/Delete.png';
+import './Home.css';
 
 function Home() {
     return (
         <>
-        <dates-view>
-            <button className={"change-date"}><img src={Arrow} alt="Change date after"/>
-        </button>
-        <date>19</date>
-            <button className={"change-date"}><img src={Arrow} alt="Change date after" style={{transform: 'rotate(180deg)'}}/>
+        <div className={"dates-view"}>
+            <button className={"change-date-button"}>
+                <img src={Arrow} alt="Change date after"/>
             </button>
-        </dates-view>
-            <tasks-list>
-                <task-body-done>
-                    <task-name>
+        <div className={"date"}>19</div>
+            <button className={"change-date-button"}><img src={Arrow} alt="Change date after" style={{transform: 'rotate(180deg)'}}/>
+            </button>
+        </div>
+            <div className={"tasks-list"}>
+                <div className={"task-body-done"}>
+                    <div className={"task-name"}>
                         Wake up at 5:00
-                    </task-name>
-                    <task-buttons>
+                    </div>
+                    <div className={"task-buttons"}>
                     <button className={"edit"}>
                         <img src={Edit} alt="edit-button"/>
                     </button>
@@ -29,9 +30,9 @@ function Home() {
                                 <input type="checkbox"/>
                                 <span className="checkmark"></span>
                             </label>
-                    </task-buttons>
-                </task-body-done>
-            </tasks-list>
+                    </div>
+                </div>
+            </div>
         </>
 
     )
