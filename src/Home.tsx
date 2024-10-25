@@ -81,7 +81,6 @@ function Home() {
               <input type="checkbox"/>
               <span className="checkmark"></span>
             </label>
-            <h1>{JSON.stringify(users)}</h1>
           </div>
         </div>
       </div>
