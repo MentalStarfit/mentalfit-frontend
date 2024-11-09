@@ -6,11 +6,7 @@ function AddHabit(){
 return (
     <>
     <div className={"add-habit-popup"}>
-        <button className={"add-habit"}>
-            +
-        </button>
-
-    </div>
+        <p>AAAAA</p>
     </div>
 </>
 
